@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Google Drive Clone</title>
+</head>
+
+
+<body class="h-full  bg-white-700 ">
+  <header>
+    <div class=" bg-slate-100 h-15 flex justify-between ">
+      <!-- parent logo -->
+      <div class="p-2 flex ml-3 mr-2">
+        <img src="https://icons.iconarchive.com/icons/marcus-roberto/google-play/512/Google-Drive-icon.png"
+          alt="drive logo" class="size-10 ">
+        <div>
+          <h1 class="p-1 text-2xl">Drive</h1>
+        </div>
+      </div>
+      <!-- input section -->
+      <div class="bg-slate-300 w-1/2 rounded-full m-3   ">
+        <i class="fa fas fa-search text-white mr-5 p-3 "></i>
+        <input type="text" placeholder="Search in Drive " class="m-2 ml-5 w-75/100 focus:outline-none text-bold">
+        <i
+          class="fas fa-align-left float-right mr-2  bg-zinc-100 hover:bg-zinc-200 p-2 rounded-full size-9 flex justify-center align-center text-xl  scale-85 "></i>
+
+      </div>
+      <!-- link bar section  -->
+      <div class="flex  gap-5 p-2 text-2xl m-1">
+        <div>
+          <i class="far fa-question-circle"></i>
+        </div>
+        <div>
+          <i class="fas fa-cog"></i>
+        </div>
+        <div>
+          <img
+            src="https://cdn.prod.website-files.com/67051022f2554866b34a2df2/671e6894a0f90c680fc5e3f6_Gemini-Icon-300x300.png.webp"
+            alt="" class="size-8">
+        </div>
+        <img src="https://www.svgrepo.com/show/315749/menu-grid-o.svg" alt="">
+        <div>
+          <div
+            class="bg-green-500 rounded-full size-9 text-center font-bold white-200 text-white flex justify-center align-center ">
+            p</div>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- main section -->
+  <main>
+    <!-- parent greed  -->
+    <div class="grid grid-cols-12">
+      <!-- leftside material  -->
+      <aside class="bg-slate-100 col-span-2 max-h-screen" aria-label="Sidebar Navigation">
+        <section class="p-4">
+          <!-- New Button -->
+          <button type="button"
+            class="bg-pink-100 ml-1 p-2 rounded-xl h-15 hover:bg-white mt-5 shadow-md dark:bg-gray-900 flex items-center"
+            aria-label="Create New Item">
+            <i class="fas fa-plus p-2" aria-hidden="true"></i>
+            <span class="p-2 font-bold">New</span>
+          </button>
+
+          <!-- Navigation -->
+          <nav class="mt-6" aria-label="Main navigation">
+            <ul class="space-y-2">
+              <li>
+                <a href="#" class="flex items-center hover:bg-sky-100 rounded-full h-10 px-4 py-2">
+                  <i class="fas fa-home-lg-alt mr-3" aria-hidden="true"></i>
+                  <span>Home</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-sky-100 rounded-full h-10 px-4 py-2">
+                  <i class="fab fa-google-drive mr-3" aria-hidden="true"></i>
+                  <span>My Drive</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-sky-100 rounded-full h-10 px-4 py-2">
+                  <i class="fas fa-laptop mr-3" aria-hidden="true"></i>
+                  <span>Computers</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-sky-100 rounded-full h-10 px-4 py-2">
+                  <i class="fas fa-users mr-3" aria-hidden="true"></i>
+                  <span>Shared With Me</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-sky-100 rounded-full h-10 px-4 py-2">
+                  <i class="far fa-clock mr-3" aria-hidden="true"></i>
+                  <span>Recent</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-sky-100 rounded-full h-10 px-4 py-2">
+                  <i class="far fa-star mr-3" aria-hidden="true"></i>
+                  <span>Starred</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-sky-100 rounded-full h-10 px-4 py-2">
+                  <img src="https://static.thenounproject.com/png/436053-200.png" alt="Spam" class="w-5 h-5 mr-3" />
+                  <span>Spam</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-sky-100 rounded-full h-10 px-4 py-2">
+                  <i class="fas fa-trash-alt mr-3" aria-hidden="true"></i>
+                  <span>Trash</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-sky-100 rounded-full h-10 px-4 py-2">
+                  <i class="fas fa-cloud mr-3" aria-hidden="true"></i>
+                  <span>Storage</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+
+          <!-- Get More Storage CTA -->
+          <div class="mt-10 ml-2">
+            <button class="border border-blue-900 px-4 py-2 rounded-full hover:bg-sky-100 text-sm">
+              Get more Storage
+            </button>
+          </div>
+        </section>
+      </aside>
+
+
+      <!-- main section file show -->
+      <div class="col-span-9 overflow-y-auto max-h-screen rounded-2xl scrollbar">
+        <!-- welcome drive section -->
+        <div class="flex justify-between ">
+          <div>
+            <p class=" text-2xl m-5">Welcome to Drive </p>
+          </div>
+          <div><img src="https://static.thenounproject.com/png/436053-200.png" alt="" class="size-4 mr-8 mt-6">
+          </div>
+        </div>
+        <div class="mt-5 m-2">
+          <button class=" hover:border-blue-900 p-1 rounded-full hover:bg-sky-100 w-55"> <i
+              class="fas fa-angle-down mr-5"></i>Saggetion Folder</button>
+        </div>
+        <!-- anime night work -->
+        <!-- parent -->
+        <div class="grid grid-cols-12 ">
+          <div class="bg-slate-100 h-15 col-span-3 m-3 rounded-2xl ">
+            <div class="flex justify-between p-3 ">
+              <div>
+                <span><i class="fa-solid fa-folder p-1"></i><span> &nbsp;&nbsp;Anime night work</span>
+                  <p class="ml-10 leading-none text-[14px]">in my drive</p>
+                </span>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+          </div>
+          <div class="bg-slate-100 h-15 col-span-3 m-3 rounded-2xl">
+            <div class="flex justify-between p-3">
+              <div>
+                <span><i class="fa-solid fa-folder p-1"></i><span> &nbsp;&nbsp;Anime </span>
+                  <p class="ml-10 leading-none text-[14px]">in Shered with me </p>
+                </span>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+          </div>
+          <div class="bg-slate-100 h-15 col-span-3 m-3 rounded-2xl">
+            <div class="flex justify-between p-3">
+              <div>
+                <span><i class="fa-solid fa-folder p-1"></i><span> &nbsp;&nbsp;Swiggy-api</span>
+                  <p class="ml-10 leading-none text-[14px]">in Shered with me</p>
+                </span>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+          </div>
+
+        </div>
+        <!-- sagetion part  -->
+        <div class="flex justify-between align-center ">
+          <div class="mt-5 m-2">
+            <button class=" hover:border-blue-900 p-1 rounded-full hover:bg-sky-100 w-55"> <i
+                class="fas fa-angle-down mr-5"></i>Saggetion File</button>
+          </div>
+          <div class="mr-5">
+            <button class=" border-1 rounded-full "><i class="fa-solid fa-bars m-2"></i> &nbsp;| &nbsp;<i
+                class="fa-solid fa-check m-1"></i> &nbsp;<i class="fa-regular fa-grid-2"></i></button>
+
+          </div>
+        </div>
+        <!-- file sections -->
+        <div class="grid grid-cols-10 p-5 m-5 gap-20 ">
+          <!-- one file -->
+          <div class="bg-slate-100 h-[262px] col-span-3 w-70  rounded p-1 cursor-pointer hover:bg-gray-400 ">
+            <div class="flex justify-between p-3">
+              <div>
+                <span><i class="fa-solid fa-folder p-1"></i><span> &nbsp;&nbsp;Swiggy-api</span>
+                </span>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+            <div class="bg-gray-300 h-40 rounded m-2">
+              <div class="flex align-center justify-center">
+                <img
+                  src="https://png.pngtree.com/png-vector/20240216/ourmid/pngtree-yellow-folder-illustration-vector-png-image_11747699.png"
+                  alt="folder" class="h-40 ">
+              </div>
+
+
+            </div>
+            <div class="flex justify-around align-center ">
+              <div class="bg-green-400 rounded-full size-8 text-center font-bold white-100  scale-80 mr-2 mb-4">
+                <h1 class="text-white ">p</h1>
+              </div>
+              <div class="text-[14px]  mr-15 text-gray-500"><span>you opend.Feb 22,25</span></div>
+            </div>
+          </div>
+
+
+          <!-- 2 -->
+
+          <div class="bg-slate-100 h-[262px] col-span-3 w-70  rounded p-1 cursor-pointer hover:bg-gray-400 ">
+            <div class="flex justify-between p-3">
+              <div>
+                <span><i class="fa-solid fa-folder p-1"></i><span> &nbsp;&nbsp;regex-api</span>
+
+                </span>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+            <div class="bg-gray-300 h-40 rounded m-2">
+              <div class="flex align-center justify-center">
+                <img
+                  src="https://png.pngtree.com/png-vector/20240216/ourmid/pngtree-yellow-folder-illustration-vector-png-image_11747699.png"
+                  alt="folder" class="h-40 ">
+              </div>
+
+            </div>
+            <div class="flex justify-around align-center ">
+              <div class="bg-green-400 rounded-full size-8 text-center font-bold white-100  scale-80 mr-2 mb-4">
+                <h1 class="text-white ">p</h1>
+              </div>
+              <div class="text-[14px]  mr-15 text-gray-500"><span>you opend.Feb 22,25</span></div>
+            </div>
+          </div>
+          <!-- 3 -->
+
+
+          <div class="bg-slate-100 h-[262px] col-span-3 w-70  rounded p-1 cursor-pointer hover:bg-gray-400">
+            <div class="flex justify-between p-3">
+              <div>
+                <span><i class="fa-solid fa-folder p-1"></i><span> &nbsp;&nbsp;Mern-api</span>
+
+                </span>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+            <div class="bg-gray-300 h-40 rounded m-2">
+              <div class="flex align-center justify-center">
+                <img
+                  src="https://png.pngtree.com/png-vector/20240216/ourmid/pngtree-yellow-folder-illustration-vector-png-image_11747699.png"
+                  alt="folder" class="h-40 ">
+              </div>
+
+            </div>
+            <div class="flex justify-around align-center ">
+              <div class="bg-green-400 rounded-full size-8 text-center font-bold white-100  scale-80 mr-2 mb-4">
+                <h1 class="text-white ">p</h1>
+              </div>
+              <div class="text-[14px]  mr-15 text-gray-500"><span>you opend.Feb 22,25</span></div>
+            </div>
+          </div>
+
+
+          <!-- 4 -->
+          <div class="bg-slate-100 h-[262px] col-span-3 w-70  rounded p-1 cursor-pointer hover:bg-gray-400">
+            <div class="flex justify-between p-3">
+              <div>
+                <span><i class="fa-solid fa-folder p-1"></i><span> &nbsp;&nbsp;Summer-api</span>
+
+                </span>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+            <div class="bg-gray-300 h-40 rounded m-2">
+
+              <div class="flex align-center justify-center">
+                <img
+                  src="https://png.pngtree.com/png-vector/20240216/ourmid/pngtree-yellow-folder-illustration-vector-png-image_11747699.png"
+                  alt="folder" class="h-40 ">
+              </div>
+
+            </div>
+            <div class="flex justify-around align-center ">
+              <div class="bg-green-400 rounded-full size-8 text-center font-bold white-100  scale-80 mr-2 mb-4">
+                <h1 class="text-white ">p</h1>
+              </div>
+              <div class="text-[14px]  mr-15 text-gray-500"><span>you opend.Feb 22,25</span></div>
+            </div>
+          </div>
+
+          <!-- 5 -->
+
+          <div class="bg-slate-100 h-[262px] col-span-3 w-70  rounded p-1 cursor-pointer hover:bg-gray-400 ">
+            <div class="flex justify-between p-3">
+              <div>
+                <span><i class="fa-solid fa-folder p-1"></i><span> &nbsp;&nbsp;Swiggy-api</span>
+
+                </span>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+            <div class="bg-gray-300 h-40 rounded m-2">
+
+              <div class="flex align-center justify-center">
+                <img
+                  src="https://png.pngtree.com/png-vector/20240216/ourmid/pngtree-yellow-folder-illustration-vector-png-image_11747699.png"
+                  alt="folder" class="h-40 ">
+              </div>
+
+            </div>
+            <div class="flex justify-around align-center ">
+              <div class="bg-green-400 rounded-full size-8 text-center font-bold white-100  scale-80 mr-2 mb-4">
+                <h1 class="text-white ">p</h1>
+              </div>
+              <div class="text-[14px]  mr-15 text-gray-500"><span>you opend.jun 12,25</span></div>
+            </div>
+          </div>
+          <!-- 6 -->
+
+          <div class="bg-slate-100 h-[262px] col-span-3 w-70  rounded p-1 cursor-pointer hover:bg-gray-400">
+            <div class="flex justify-between p-3">
+              <div>
+                <span><i class="fa-solid fa-folder p-1"></i><span> &nbsp;&nbsp;Swiggy-api</span>
+
+                </span>
+              </div>
+              <div><i class="fa-solid fa-ellipsis-vertical"></i></div>
+            </div>
+            <div class="bg-gray-300 h-40 rounded m-2  ">
+              <div class="flex align-center justify-center ">
+                <img
+                  src="https://png.pngtree.com/png-vector/20240216/ourmid/pngtree-yellow-folder-illustration-vector-png-image_11747699.png"
+                  alt="folder" class="h-40 ">
+              </div>
+            </div>
+            <div class="flex justify-around align-center ">
+              <div class="bg-green-400 rounded-full size-8 text-center font-bold white-100  scale-80 mr-2 mb-4">
+                <h1 class="text-white ">p</h1>
+              </div>
+              <div class="text-[14px]  mr-15 text-gray-500"><span>you opend.March 20,25</span></div>
+            </div>
+          </div>
+
+
+        </div>
+
+      </div>
+
+
+
+
+      <!-- right side page -->
+
+      <div class="bg-slate-100 col-span-1 max-h-screen flex flex-col items-center py-5">
+        <!-- Google Logo -->
+        <div>
+          <img src="https://marketplace.luccasoftware.com/wp-content/uploads/2023/01/pnggoogle.png" alt="Google Logo"
+            class="size-9 mb-5" />
+        </div>
+
+        <!-- Google Drive Icon -->
+        <div>
+          <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2021/06/06/60bd9c8046b2d-384x384.png"
+            alt="Google Drive" class="size-7 mt-10" />
+        </div>
+
+        <!-- Google Tasks Icon -->
+        <div>
+          <img
+            src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5b/Google_Tasks_2021.svg/250px-Google_Tasks_2021.svg.png"
+            alt="Google Tasks" class="size-6 mt-10" />
+        </div>
+
+        <!-- Job Icon and Add New Button -->
+        <div class="mt-10 flex flex-col items-center">
+          <img
+            src="https://images.rawpixel.com/image_png_800/cHJpdmF0ZS9sci9pbWFnZXMvd2Vic2l0ZS8yMDIyLTA0L3BmLWljb240LWppcjIwNjItcG9yLWwtam9iNzg4LnBuZw.png"
+            alt="Job Icon" class="size-8" />
+          <a href="FrontendProject/form/form01.html" aria-label="Add New Form"
+            class="mt-2 text-3xl text-blue-600 hover:text-blue-800">
+            +
+          </a>
+        </div>
+      </div>
+
+
+
+    </div>
+  </main>
+
+
+</body>
+
+</html>

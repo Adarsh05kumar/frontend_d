@@ -1,0 +1,258 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>SpotifyClone</title>
+</head>
+
+<body>
+  <div class="h-full  bg-slate-700 p-1 ">
+    <div class="bg-slate-600 h-14 mb-4 rounded-full">
+      <div class="flex justify-between p-2 m-5">
+        <div class="">
+          <h2 class="text-green-500 text-2xl font-bold">Spotify</h2>
+        </div>
+        <div class="bg-slate-800 w-40/100 rounded-full text-center p-2">
+          <i class="fa fas fa-search text-white "></i>
+          <input type="text" placeholder="Enter Your Fav Song.... " class="text-white font-bold  text-center">
+        </div>
+        <div class="bg-green-500 rounded-full size-8 text-center font-bold white-100 text-white ">p</div>
+      </div>
+    </div>
+    <div class=" flex gap-2 m-1">
+      <!-- artist list  -->
+      <div class="bg-slate-600 h-screen w-20/100 rounded-2xl">
+        <!-- parent -->
+        <div class="flex justify-between p-8">
+          <div class="text-xl text-bold font-bold">
+            <h1>Your Library</h1>
+          </div>
+          <div class="bg-red-200 rounded-full p-1 justify-center font-bold size-8 text-center">+</div>
+          <div class="bg-green-500 rounded-full size-8 text-center font-bold white-100 ">
+            <h1 class="text-white">p</h1>
+          </div>
+        </div>
+        <!-- playlis -->
+        <div class="flex gap-2">
+          <div class="bg-red-200 rounded-3xl font-bold p-2 text-center ml-5 ">Playlist</div>
+          <!-- artist -->
+          <div class="bg-red-200 rounded-3xl font-bold p-2 text-center ml-5 "> Artist</div>
+        </div>
+        <div class="m-4">
+          <div class="flex justify-between">
+            <div>
+              <i class="fa fas fa-search text-white w-20 "></i>
+            </div>
+            <!-- baricon -->
+            <div>
+              <p class="font-bold gap-2">Rcidents &nbsp;&nbsp;<i class="fa-solid fa-bars"></i></p>
+            </div>
+          </div>
+          <!-- playlist fav icon -->
+          <div class="bg-slate-500 w-67 h-15 p-2 mt-8 rounded mr-5 flex">
+            <div class="bg-slate-100 w-12  h-10 p-2 rounded"><i class="fa-solid fa-music m-1"></i></div>
+            <div class="ml-3">
+              <p class="text-bold text-white">MyPlaylist#1 <br>
+              <p>Playlist.Adarsh Prajapati</p>
+              </p>
+            </div>
+          </div>
+          <div class="bg-slate-500 w-67 h-15 p-2 mt-3 rounded  flex">
+            <div class="bg-slate-100 w-12  h-10 p-2 rounded"><i class="fa-solid fa-music m-1"></i></div>
+            <div class="ml-3">
+              <p class="text-bold text-white">MyPlaylist#1 <br>
+              <p>Playlist.Adarsh Prajapati</p>
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      <!-- images section  -->
+      <div class="bg-slate-600 h-full w-60/100 rounded-2xl ">
+        <div class=" gap-5 flex flex-wrap justify-between p-1 overflow-auto  ">
+
+          <div class="bg-slate-700 p-2 mt-3 rounded size-50 bg-slate-800 hover:bg-slate-700 ">
+            <img src="https://c.saavncdn.com/755/Trending-Songs-2023-Hindi-2023-20240207175200-500x500.jpg" alt="img"
+              class="size-50">
+            <div class="leading-none m-2 wrap ">
+              <p>Bollywood song tranding song filhal song </p>
+            </div>
+          </div>
+          <div class="bg-slate-700 p-2 mt-3 rounded size-50 bg-slate-800 hover:bg-slate-700 ">
+            <img src="https://i1.sndcdn.com/artworks-y0Luzy9CQkb8S1Ss-4qSCaw-t500x500.jpg" alt="img"
+              class="bg-cover bg-center">
+            <div class="leading-none m-2 wrap ">
+              <p>Bollywood song tranding song filhal song </p>
+            </div>
+          </div>
+          <div class="bg-slate-700 p-2 mt-3 rounded size-50  bg-slate-800 hover:bg-slate-700">
+            <img src="https://c.saavncdn.com/755/Trending-Songs-2023-Hindi-2023-20240207175200-500x500.jpg" alt="img"
+              class="w-full">
+            <div class="leading-none m-2 wrap ">
+              <p>Bollywood song tranding song filhal song </p>
+            </div>
+          </div>
+          <div class="bg-slate-700 p-2 mt-3 rounded size-50  bg-slate-800 hover:bg-slate-700">
+            <img src="https://c.saavncdn.com/755/Trending-Songs-2023-Hindi-2023-20240207175200-500x500.jpg" alt="img"
+              class="w-full">
+            <div class="leading-none m-2 wrap ">
+              <p>Bollywood song tranding song filhal song </p>
+            </div>
+          </div>
+          <div class="bg-slate-700 p-2 mt-8 rounded size-50  bg-slate-800 hover:bg-slate-700">
+            <img src="https://c.saavncdn.com/755/Trending-Songs-2023-Hindi-2023-20240207175200-500x500.jpg" alt="img"
+              class="w-full">
+            <div class="leading-none m-2 wrap ">
+              <p>Bollywood song tranding song filhal song </p>
+            </div>
+          </div>
+          <div class="bg-slate-700 p-2 mt-8 rounded size-50  bg-slate-800 hover:bg-slate-700">
+            <img src="https://c.saavncdn.com/755/Trending-Songs-2023-Hindi-2023-20240207175200-500x500.jpg" alt="img"
+              class="w-full">
+            <div class="leading-none m-2 wrap ">
+              <p>Bollywood song tranding song filhal song </p>
+            </div>
+          </div>
+
+          <div class="bg-slate-700 p-2 mt-8 rounded size-50  bg-slate-800 hover:bg-slate-700">
+            <img src="https://c.saavncdn.com/755/Trending-Songs-2023-Hindi-2023-20240207175200-500x500.jpg" alt="img"
+              class="w-full">
+            <div class="leading-none m-2 wrap ">
+              <p>Bollywood song tranding song filhal song </p>
+            </div>
+          </div>
+
+          <div class="bg-slate-700 p-2 mt-8 rounded size-50  bg-slate-800 hover:bg-slate-700">
+            <img src="https://c.saavncdn.com/674/Jiya-Re-Hits-of-Anushka-Sharma-Hindi-2015-150x150.jpg" alt="img"
+              class="w-full">
+            <div class="leading-none m-2 wrap ">
+              <p>Bollywood song tranding song filhal song </p>
+            </div>
+          </div>
+          <div class="bg-slate-700 p-2 mt-8 rounded size-50  bg-slate-800 hover:bg-slate-700">
+            <img src="https://s.saregama.tech/image/c/fw_485/b/8a/8e/80-s-vs-90-s-romantic-songs_1514363145.jpg"
+              alt="img" class="w-full">
+            <div class="leading-none m-2 wrap ">
+              <p>Bollywood song tranding song filhal song </p>
+            </div>
+          </div>
+          <div class="bg-slate-700 p-2 mt-8 rounded size-50  bg-slate-800 hover:bg-slate-700">
+            <img src="https://c.saavncdn.com/674/Jiya-Re-Hits-of-Anushka-Sharma-Hindi-2015-150x150.jpg" alt="img"
+              class="w-full">
+            <div class="leading-none m-2 wrap ">
+              <p>Bollywood song tranding song filhal song </p>
+            </div>
+          </div>
+          <div class="bg-slate-700 p-2 mt-8 rounded size-50  bg-slate-800 hover:bg-slate-700">
+            <img src="https://s.saregama.tech/image/c/fw_485/b/8a/8e/80-s-vs-90-s-romantic-songs_1514363145.jpg"
+              alt="img" class="w-full">
+            <div class="leading-none m-2 wrap ">
+              <p>Bollywood song tranding song filhal song </p>
+            </div>
+          </div>
+          <div class="bg-slate-700 p-2 mt-8 rounded size-50  bg-slate-800 hover:bg-slate-700">
+            <img src="https://s.saregama.tech/image/c/fw_485/b/8a/8e/80-s-vs-90-s-romantic-songs_1514363145.jpg"
+              alt="img" class="size-50">
+            <div class="leading-none m-2 wrap ">
+              <p>Bollywood song tranding song filhal song </p>
+            </div>
+          </div>
+
+
+
+
+        </div>
+
+      </div>
+      <div class="bg-slate-600 h-screen w-20/100 rounded-2xl">
+        <div class="flex justify-between p-2">
+          <div class="flex m-6">
+            <i class="fa-solid fa-bars p-2"> &nbsp; &nbsp;</i>
+            <p class="m-1 text-bold font-bold underline">Alag aasman</p>
+          </div>
+
+          <div class="size-8 m-4 text-bold font-bold text-3xl">...</div>
+        </div>
+        <div>
+          <img src="https://lastfm.freetls.fastly.net/i/u/ar0/ad7e05685bef8909f27c0d95bf79425c.jpg" alt=""
+            class="p-2 rounded-2xl">
+          <p class="text-2xl font-bold text-center text-white ">All super hit song of Arjit Singh</p>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- footer  -->
+     <footer class="bg-zinc-900 text-zinc-400 p-10 rounded mr-1 ml-1">
+  <div class="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-sm">
+    <!-- Company -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Company</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">About</a></li>
+        <li><a href="#" class="hover:underline">Jobs</a></li>
+        <li><a href="#" class="hover:underline">For the Record</a></li>
+      </ul>
+    </div>
+
+    <!-- Communities -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Communities</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">For Artists</a></li>
+        <li><a href="#" class="hover:underline">Developers</a></li>
+        <li><a href="#" class="hover:underline">Advertising</a></li>
+        <li><a href="#" class="hover:underline">Investors</a></li>
+        <li><a href="#" class="hover:underline">Vendors</a></li>
+      </ul>
+    </div>
+
+    <!-- Useful Links -->
+    <div>
+      <h3 class="text-white font-semibold mb-4">Useful Links</h3>
+      <ul class="space-y-2">
+        <li><a href="#" class="hover:underline">Support</a></li>
+        <li><a href="#" class="hover:underline">Web Player</a></li>
+        <li><a href="#" class="hover:underline">Free Mobile App</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media Icons -->
+    <div class="flex space-x-4 mt-6 md:mt-0 flex justify-center align-center ">
+      <a href="https://www.instagram.com/"  class="bg-zinc-800 hover:bg-zinc-700 p-3 rounded-full size-10 flex justify-center align-center text-xl">
+         <i class="fa-brands fa-instagram"></i>
+      </a>
+      <a href="https://x.com/?lang=en" class="bg-zinc-800 hover:bg-zinc-700 p-3 rounded-full size-10 flex justify-center align-center text-xl">
+       <i class="fa-brands fa-twitter"></i>
+      </a>
+      <a href="https://www.facebook.com/" class="bg-zinc-800 hover:bg-zinc-700 p-3 rounded-full size-10 flex justify-center align-center text-xl">
+<i class="fa-brands fa-facebook"></i>     
+ </a>
+    </div>
+  </div>
+
+  <!-- Bottom -->
+  <div class="mt-8 text-xs text-zinc-500 flex flex-col md:flex-row justify-between items-center">
+    <p>© 2025 Spotify Clone. All rights reserved.</p>
+    <div class="flex space-x-4 mt-2 md:mt-0">
+      <a href="#" class="hover:underline">Privacy</a>
+      <a href="#" class="hover:underline">Terms</a>
+      <a href="#" class="hover:underline">Cookies</a>
+    </div>
+  </div>
+</footer>
+
+
+  </div>
+ 
+</body>
+
+</html>

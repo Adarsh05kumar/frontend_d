@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Document</title>
+</head>
+
+<style>
+  /* custom scrollbar style */
+  .scrollbar::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  .scrollbar::-webkit-scrollbar-thumb {
+    background-color: #cbd5e0;
+    /* slate-300 */
+    border-radius: 10px;
+  }
+
+  .scrollbar::-webkit-scrollbar-track {
+    background-color: transparent;
+  }
+</style>
+
+<body>
+  <header class="bg-slate-100">
+    <div class=" flex justify-between py-2 p-9 align-center">
+      <div class="flex ">
+
+        <span class="flex ">
+          <i class="fa-solid fa-bars text-xl mt-4 mr-5"></i>
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSTjGjc3t3f7wgtxAJOLOVm9ZQ8YDDAoSzC4A&s"
+            alt="logo" class="h-10 mt-2">
+
+          <span class="text-2xl m-2   ">
+            <span class=" hover:text-blue-600"> Classroom </span><i
+              class="fa-solid fa-angle-right text-[19px]  hover:text-blue-600"></i>
+
+            <a href="#" class="text-[20px]  hover:text-blue-600 ">
+              Frontend BATCH-D
+              <br>
+              <span class="text-[12px] leading-none block ml-35 underline decoration-blue-500  hover:text-blue-600">
+                https://classroom.google.com/c/Nzg3NTYxNTc4Njcx
+              </span>
+            </a>
+          </span>
+
+        </span>
+      </div>
+
+      <div class="flex gap-5 p-1 mt-2">
+        <div>
+          <img src="https://www.svgrepo.com/show/315749/menu-grid-o.svg" alt="gred" class="w-7">
+        </div>
+        <div
+          class="bg-pink-500 rounded-full size-8 text-center font-bold white-200 text-white flex justify-center align-center ">
+          p</div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- main section  -->
+  <main>
+    <div class="grid grid-cols-12">
+
+      <div class="bg-slate-100 col-span-2 h-screen">
+        <aside>
+          <nav>
+            <ul class="space-y-4 p-4">
+              <li>
+                <a href="#" class="flex items-center hover:bg-gray-300 rounded-full h-13 px-4 py-2 text-xl">
+                  <i class="fas fa-home-lg-alt mr-6 " aria-hidden="true"></i>
+                  <span class="text-[16px] color-gray-900">Home</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-gray-300 rounded-full h-13 px-4 py-2 text-xl">
+                  <i class="fa-regular fa-calendar mr-6"></i>
+                  <span class="text-[16px] color-gray-900">Calendar</span>
+                </a>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-gray-300 rounded-full h-13 px-4 py-2 text-xl">
+                  <i class="fa-solid fa-graduation-cap mr-5"></i>
+                  <div class="flex justify-between align-center w-100">
+                    <div class="text-[16px] color-gray-900">Enrolled </div>
+                    <div class="text-bold"><i class="fa-solid fa-angle-down"></i></div>
+                  </div>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-gray-300 rounded-full h-13 px-4 py-2 text-xl">
+                  <img src="https://img.icons8.com/?size=100&id=N1AnLQK3VcgT&format=png&color=000000" alt=""
+                    class="h-7 mr-5">
+                  <span class="text-[16px] color-gray-900">To-do</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-gray-300 rounded-full h-13 px-4 py-2 text-xl">
+
+                  <div
+                    class="bg-sky-400 rounded-full size-8 text-center font-bold white-200 text-white flex justify-center align-center mr-6 ">
+                    <span class="scale-85">p</span>
+                  </div>
+                  <span class="text-[16px] color-gray-900 text-bold ">BEGINNER CPP-6</span>
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-gray-300 rounded-full h-13 px-4 py-2 text-xl">
+
+                  <div
+                    class="bg-gray-400 rounded-full size-8 text-center font-bold white-200 text-white flex justify-center align-center  ">
+                    <span class="scale-88"> F </span>
+                  </div>
+                  <span class="text-[16px] color-gray-900 text-bold block leading-none ml-5">Frontend BATCH-D <br>
+                    <span class="text-[12px]">https://classroom.google.com/c</span></span>
+
+                </a>
+              </li>
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-sky-200 rounded-full h-13 px-4 py-2 text-xl">
+
+                  <div
+                    class="bg-sky-400 rounded-full size-8 text-center font-bold white-200 text-white flex justify-center align-center mr-6 ">
+                    <span class="scale-85">C</span>
+                  </div>
+                  <span class="text-[16px] color-gray-900 text-bold ">C logical 30</span>
+                </a>
+              </li>
+
+
+              <li>
+                <a href="#" class="flex items-center hover:bg-sky-200 rounded-full h-13 px-4 py-2 text-xl">
+
+                  <div
+                    class="bg-green-400 rounded-full size-8 text-center font-bold white-200 text-white flex justify-center align-center mr-6 ">
+                    <span class="scale-85">p</span>
+                  </div>
+                  <span class="text-[16px] color-gray-900 text-bold ">BEGINNER CPP-6</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" class="flex items-center hover:bg-gray-300 rounded-full h-13 px-4 py-2 text-xl">
+                  <i class="fa-solid fa-boxes-packing mr-6"></i>
+                  <span class="text-[16px] color-gray-900">Achive classes</span>
+                </a>
+              </li>
+
+              </li>
+              <li>
+                <a href="#" class="flex items-center hover:bg-gray-300 rounded-full h-13 px-4 py-2 text-xl">
+                  <i class="fa-solid fa-gear mr-6"></i>
+                  <span class="text-[16px] color-gray-900">Settings</span>
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </aside>
+      </div>
+
+      <!-- right side -->
+      <!-- <div class="bg-white-900 col-span-9 h-screen   rounded-full">
+     
+
+        <div class="flex justify-between  py-5">
+          <div class=" flex gap-5 text-xl text-bold px-10 ">
+
+            <div><a href="#" class=" hover:text-blue-600">Stream</a></div>
+            <div><a href="#" class=" hover:text-blue-600">Classwork</a></div>
+            <div><a href="#" class=" hover:text-blue-600">people</a></div>
+          </div>
+          <div class="flex  gap-3 ">
+            <div class="">
+              <a href="#" >
+                <i class="fa-regular fa-calendar text-2xl p-2"></i>
+              </a>
+            </div>
+
+            <div>
+              <a href="##">
+                <img src="https://images.icon-icons.com/814/PNG/512/Google_Drive_icon-icons.com_66213.png" alt="log"
+                  class="w-10">
+              </a>
+            </div>
+            
+          </div>
+
+
+        </div>
+
+
+
+
+      </div> -->
+      <div class="bg-white col-span-10 min-h-screen rounded-b-xl">
+        <!-- Main Navbar -->
+        <nav class="flex justify-between items-center py-5 px-10">
+          <!-- Left Navigation Links -->
+          <div class="flex gap-9 text-lg font-semibold">
+            <a href="#" class="hover:text-blue-600 transition">Stream</a>
+            <a href="#" class="hover:text-blue-600 transition">Classwork</a>
+            <a href="#" class="hover:text-blue-600 transition">People</a>
+          </div>
+
+          <!-- Right Icons -->
+          <div class="flex items-center gap-6">
+            <!-- Calendar Icon -->
+            <a href="#" aria-label="Calendar">
+              <i class="fa-regular fa-calendar text-2xl text-gray-700 hover:text-blue-600 p-2 transition"></i>
+            </a>
+
+            <!-- Google Drive Icon -->
+            <a href="#" aria-label="Google Drive">
+              <img src="https://images.icon-icons.com/814/PNG/512/Google_Drive_icon-icons.com_66213.png"
+                alt="Google Drive" class="w-10" />
+            </a>
+          </div>
+        </nav>
+        <hr class="text-gray-200 ">
+
+
+
+
+        <div class="flex justify-center align-center p-5 relative scrollbar">
+          <div class="text-center">
+            <img src="https://www.gstatic.com/classroom/themes/img_read.jpg" alt=" bg" class="rounded-xl w-270">
+          </div>
+          <div class="absolute text-3xl top-49 text-bold text-[40px] mr-160">
+            <h1 class="text-white-100">
+              Frontend BATCH - D
+            </h1>
+            <p class="text-[20px]">https://meet.google.com/dmo-ndxs-ubw</p>
+          </div>
+        </div>
+
+        <!-- container  -->
+        <div class="flex  align-center px-40 gap-10">
+
+          <div class="bg-slate-100 h-40 w-60  text-gray-200 border rounded-xl"> 
+            <div class="p-1">
+          <div>
+            <p class="text-bold text-[18px] m-3 text-black ">upcomming</p>
+          </div>
+          <div>
+            <p class="m-3 text-gray-600 text-[15px]">Woohoo, no work due soon!</p>
+          </div>
+          <div>
+            <a href="#" class="text-blue-600 text-[17px] float-right mr-6 hover:bg-blue-100 rounded h-8 w-18 text-center rounded-2xl p-1" >viewpall</a>
+          </div>
+            </div>
+          
+          </div>
+
+          <div
+            class="bg-slate-100 h-[80px]  w-200  rounded p-1 cursor-pointer hover:bg-gray-100 text-gray-200 border rounded-xl">
+            <div class="flex justify-between align-center py-4 p-5 text-xl">
+              <a href="#" class="flex items-center  px-4  text-xl">
+
+                  <div
+                    class="bg-green-400 rounded-full size-10 text-center font-bold white-200 text-white flex justify-center align-center mr-6 ">
+                    <span class=""><i class="fa-solid fa-jet-fighter-up  text-center"></i></span>
+                  </div>
+                  <span class="text-[16px] color-gray-900 text-bold text-black text-[20px] ">REGex Software posted a new material: 7/7/25 <br><span class="text-[14px] leading-none block">yesterday</span></span>
+                </a>
+                
+              <div><i class="fa-solid fa-ellipsis-vertical text-red-900"></i></div>
+            </div>
+
+
+            <!-- 2 -->
+
+            <div class="bg-slate-100 h-[80px]  w-200  rounded p-1 cursor-pointer hover:bg-gray-100 text-gray-200 border rounded-xl mt-6">
+            <div class="flex justify-between align-center py-4 p-5 text-xl">
+              <a href="#" class="flex items-center  px-4  text-xl">
+
+                  <div
+                    class="bg-green-400 rounded-full size-10 text-center font-bold white-200 text-white flex justify-center align-center mr-6 ">
+                    <span class=""><i class="fa-solid fa-jet-fighter-up  text-center"></i></span>
+                  </div>
+                  <span class="text-[16px] color-gray-900 text-bold text-black text-[20px] ">REGex Software posted a new material: 7/7/25 <br><span class="text-[14px] leading-none block">yesterday</span></span>
+                </a>
+                
+              <div><i class="fa-solid fa-ellipsis-vertical text-red-900"></i></div>
+            </div>
+
+          </div>
+
+          <!-- 3 -->
+
+          <div class="bg-slate-100 h-[80px]  w-200  rounded p-1 cursor-pointer hover:bg-gray-100 text-gray-200 border rounded-xl mt-6">
+            <div class="flex justify-between align-center py-4 p-5 text-xl">
+              <a href="#" class="flex items-center  px-4  text-xl">
+
+                  <div
+                    class="bg-green-400 rounded-full size-10 text-center font-bold white-200 text-white flex justify-center align-center mr-6 ">
+                    <span class=""><i class="fa-solid fa-jet-fighter-up  text-center"></i></span>
+                  </div>
+                  <span class="text-[16px] color-gray-900 text-bold text-black text-[20px] ">REGex Software posted a new material: 7/7/25 <br><span class="text-[14px] leading-none block">yesterday</span></span>
+                </a>
+                
+              <div><i class="fa-solid fa-ellipsis-vertical text-red-900"></i></div>
+            </div>
+
+          </div>
+
+          <!-- 4 -->
+
+
+
+
+          <div class="bg-slate-100 h-[80px]  w-200  rounded p-1 cursor-pointer hover:bg-gray-100 text-gray-200 border rounded-xl mt-6">
+            <div class="flex justify-between align-center py-4 p-5 text-xl">
+              <a href="#" class="flex items-center  px-4  text-xl">
+
+                  <div
+                    class="bg-green-400 rounded-full size-10 text-center font-bold white-200 text-white flex justify-center align-center mr-6 ">
+                    <span class=""><i class="fa-solid fa-jet-fighter-up  text-center"></i></span>
+                  </div>
+                  <span class="text-[16px] color-gray-900 text-bold text-black text-[20px] ">REGex Software posted a new material: 7/7/25 <br><span class="text-[14px] leading-none block">yesterday</span></span>
+                </a>
+                
+              <div><i class="fa-solid fa-ellipsis-vertical text-red-900"></i></div>
+            </div>
+
+          </div>
+
+          <!-- 5 -->
+
+
+
+          <div class="bg-slate-100 h-[80px]  w-200  rounded p-1 cursor-pointer hover:bg-gray-100 text-gray-200 border rounded-xl mt-6">
+            <div class="flex justify-between align-center py-4 p-5 text-xl">
+              <a href="#" class="flex items-center  px-4  text-xl">
+
+                  <div
+                    class="bg-green-400 rounded-full size-10 text-center font-bold white-200 text-white flex justify-center align-center mr-6 ">
+                    <span class=""><i class="fa-solid fa-jet-fighter-up  text-center"></i></span>
+                  </div>
+                  <span class="text-[16px] color-gray-900 text-bold text-black text-[20px] ">REGex Software posted a new material: 7/7/25 <br><span class="text-[14px] leading-none block">yesterday</span></span>
+                </a>
+                
+              <div><i class="fa-solid fa-ellipsis-vertical text-red-900"></i></div>
+            </div>
+
+          </div>
+
+          <!-- 6 -->
+
+
+          <div class="bg-slate-100 h-[80px]  w-200  rounded p-1 cursor-pointer hover:bg-gray-100 text-gray-200 border rounded-xl mt-6">
+            <div class="flex justify-between align-center py-4 p-5 text-xl">
+              <a href="#" class="flex items-center  px-4  text-xl">
+
+                  <div
+                    class="bg-green-400 rounded-full size-10 text-center font-bold white-200 text-white flex justify-center align-center mr-6 ">
+                    <span class=""><i class="fa-solid fa-jet-fighter-up  text-center"></i></span>
+                  </div>
+                  <span class="text-[16px] color-gray-900 text-bold text-black text-[20px] ">REGex Software posted a new material: 7/7/25 <br><span class="text-[14px] leading-none block">yesterday</span></span>
+                </a>
+                
+              <div><i class="fa-solid fa-ellipsis-vertical text-red-900"></i></div>
+            </div>
+
+          </div>
+
+
+          <!-- 7 -->
+
+
+          <div class="bg-slate-100 h-[80px]  w-200  rounded p-1 cursor-pointer hover:bg-gray-100 text-gray-200 border rounded-xl mt-6">
+            <div class="flex justify-between align-center py-4 p-5 text-xl">
+              <a href="#" class="flex items-center  px-4  text-xl">
+
+                  <div
+                    class="bg-green-400 rounded-full size-10 text-center font-bold white-200 text-white flex justify-center align-center mr-6 ">
+                    <span class=""><i class="fa-solid fa-jet-fighter-up  text-center"></i></span>
+                  </div>
+                  <span class="text-[16px] color-gray-900 text-bold text-black text-[20px] ">REGex Software posted a new material: 7/7/25 <br><span class="text-[14px] leading-none block">yesterday</span></span>
+                </a>
+                
+              <div><i class="fa-solid fa-ellipsis-vertical text-red-900"></i></div>
+            </div>
+
+          </div>
+
+          <!-- 8 -->
+
+
+          <div class="bg-slate-100 h-[80px]  w-200  rounded p-1 cursor-pointer hover:bg-gray-100 text-gray-200 border rounded-xl mt-6">
+            <div class="flex justify-between align-center py-4 p-5 text-xl">
+              <a href="#" class="flex items-center  px-4  text-xl">
+
+                  <div
+                    class="bg-green-400 rounded-full size-10 text-center font-bold white-200 text-white flex justify-center align-center mr-6 ">
+                    <span class=""><i class="fa-solid fa-jet-fighter-up  text-center"></i></span>
+                  </div>
+                  <span class="text-[16px] color-gray-900 text-bold text-black text-[20px] ">REGex Software posted a new material: 7/7/25 <br><span class="text-[14px] leading-none block">yesterday</span></span>
+                </a>
+                
+              <div><i class="fa-solid fa-ellipsis-vertical text-red-900"></i></div>
+            </div>
+
+          </div>
+
+
+
+
+
+          
+
+          </div>
+        
+
+
+          
+        
+        </div>
+
+
+      </div>
+      <!-- scrooll -->
+
+    </div>
+
+    <!-- col-12 -->
+    </div>
+
+
+  </main>
+
+
+</body>
+
+</html>
